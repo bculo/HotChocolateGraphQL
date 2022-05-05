@@ -29,10 +29,12 @@ namespace HotChocolateGraphQL
                 .AddQueryType<Query>()
                 .AddType<PlatformType>()
                 .AddMutationType<Mutation>()
+                .AddSubscriptionType<Subscription>()
                 .AddType<CommandType>()
                 .RegisterDbContext<AppDbContext>()
                 .AddFiltering()
-                .AddSorting();
+                .AddSorting()
+                .AddInMemorySubscriptions();
 
             /*
             services.AddPooledDbContextFactory<AppDbContext>(options =>
@@ -54,6 +56,8 @@ namespace HotChocolateGraphQL
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseWebSockets();
 
             app.UseRouting();
 
