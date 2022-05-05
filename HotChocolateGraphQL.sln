@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotChocolateGraphQL", "HotChocolateGraphQL\HotChocolateGraphQL.csproj", "{475B33EE-027F-47C2-AA97-21057350EEA3}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4FC84CE9-A1C1-4922-9862-ECE3F709924B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{475B33EE-027F-47C2-AA97-21057350EEA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{475B33EE-027F-47C2-AA97-21057350EEA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{475B33EE-027F-47C2-AA97-21057350EEA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{475B33EE-027F-47C2-AA97-21057350EEA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FC84CE9-A1C1-4922-9862-ECE3F709924B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FC84CE9-A1C1-4922-9862-ECE3F709924B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FC84CE9-A1C1-4922-9862-ECE3F709924B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FC84CE9-A1C1-4922-9862-ECE3F709924B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66A44D3A-94DF-479F-B2BA-5111661C31D8}
+	EndGlobalSection
+EndGlobal
