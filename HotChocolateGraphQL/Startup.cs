@@ -1,18 +1,14 @@
+using GraphQL.Server.Ui.Voyager;
 using HotChocolateGraphQL.Data;
 using HotChocolateGraphQL.GraphQL;
+using HotChocolateGraphQL.GraphQL.Commands;
+using HotChocolateGraphQL.GraphQL.Platforms;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using GraphQL.Server.Ui.Voyager;
-using HotChocolateGraphQL.GraphQL.Platforms;
 
 namespace HotChocolateGraphQL
 {
@@ -32,6 +28,7 @@ namespace HotChocolateGraphQL
             services.AddGraphQLServer()
                 .AddQueryType<Query>()
                 .AddType<PlatformType>()
+                .AddMutationType<Mutation>()
                 .AddType<CommandType>()
                 .RegisterDbContext<AppDbContext>()
                 .AddFiltering()
